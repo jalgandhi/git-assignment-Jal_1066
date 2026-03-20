@@ -53,7 +53,12 @@ if (number > 0) {
 } else {
     type = "zero";
 }
-let evenOdd = (number % 2 === 0) ? "even" : "odd";
+let evenOdd = "";
+if (num % 2 === 0) {
+    evenOdd = "even";
+} else {
+    evenOdd = "odd";
+}
 
 console.log(`The number ${number} is ${type} and ${evenOdd}.`);
 
